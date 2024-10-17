@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Bot, InlineKeyboard } = require('grammy');
 const bot = new Bot(process.env.TOKEN);
 
-const tgAds = InlineKeyboard.webApp('Telegram Ads | localhost', 'https://https://3175-193-187-172-65.ngrok-free.app/tg-ads');
+const tgAds = InlineKeyboard.webApp('Telegram Ads | localhost', 'https://3175-193-187-172-65.ngrok-free.app/tg-ads');
 // const testWebApp = InlineKeyboard.webApp('test webapp', 'https://domen-a.ru');
 // const wallstringDev = InlineKeyboard.webApp('WS Dev | nodeapi.ru', 'https://nodeapi.ru/?promocode=0ZL-N88-CWZ-BD3');
 // const cropImageProd = InlineKeyboard.webApp('wallstring.monitour.ru/crop', 'https://wallstring.monitour.ru/crop/?promocode=0ZL-N88-CWZ-BD3');
