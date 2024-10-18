@@ -11,7 +11,7 @@ const tgAds = InlineKeyboard.webApp('Telegram Ads | localhost', 'https://192.168
 const magnettopro = InlineKeyboard.webApp('Magnetto.pro | magnetto.monitour.ru', 'https://magnetto.monitour.ru');
 // const magnettoproDev = InlineKeyboard.webApp('Magnetto.pro | domen-a.ru', 'https://domen-a.ru/magnettopro/');
 
-const buttons = [tgAds, /*testWebApp, wallstringDev, cropImageProd, wallstringProd,*/ magnettopro/*, magnettoproDev*/];
+const buttons = [tgAdsTest, tgAds, /*testWebApp, wallstringDev, cropImageProd, wallstringProd,*/ magnettopro/*, magnettoproDev*/];
 const keyboard = InlineKeyboard.from(buttons.map(button => [button]));
 
 bot.command('start', async (ctx) => {
