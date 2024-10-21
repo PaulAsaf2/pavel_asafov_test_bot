@@ -16,6 +16,10 @@ const keyboard = InlineKeyboard.from(buttons.map(button => [button]));
 
 bot.command('start', async (ctx) => {
   await ctx.reply('WebApp', {
+    reply_markup: keyboard
+  });
+
+  ctx.reply('bla-bla', {
     reply_markup: {
       keyboard: [[{
         text: 'WebApp',
