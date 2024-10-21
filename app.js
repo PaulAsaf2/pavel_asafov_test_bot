@@ -16,7 +16,14 @@ const keyboard = InlineKeyboard.from(buttons.map(button => [button]));
 
 bot.command('start', async (ctx) => {
   await ctx.reply('WebApp', {
-    reply_markup: keyboard
+    reply_markup: {
+      keyboard: [[{
+        text: 'WebApp',
+        web_app: 'https://192.168.0.103:3000/tg-ads/'
+      }]],
+      resize_keyboard: true,
+      one_time_keyboard: true
+    }
   });
 });
 
