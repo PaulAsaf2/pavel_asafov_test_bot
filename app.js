@@ -14,11 +14,13 @@ const magnettopro = InlineKeyboard.webApp('Magnetto.pro | magnetto.monitour.ru',
 const buttons = [tgAdsTest, tgAds, /*testWebApp, wallstringDev, cropImageProd, wallstringProd,*/ magnettopro/*, magnettoproDev*/];
 const keyboard = InlineKeyboard.from(buttons.map(button => [button]));
 
-bot.command('start', async (ctx) => {
-  await ctx.reply('WebApp', {
+bot.command('start', (ctx) => {
+  ctx.reply('WebApp', {
     reply_markup: keyboard
   });
+});
 
+bot.command('key', (ctx) => {
   ctx.reply('bla-bla', {
     reply_markup: {
       keyboard: [[{
